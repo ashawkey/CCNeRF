@@ -1,0 +1,36 @@
+
+dataset_name = blender
+datadir = ./data/nerf_synthetic/ficus
+basedir = ./log
+
+n_iters = 30000
+batch_size = 4096
+
+N_voxel_init = 2097156 # 128**3
+N_voxel_final = 27000000 # 300**3
+upsamp_list = [2000, 3000, 4000, 5500, 7000]
+update_AlphaMask_list = [2000, 4000]
+
+N_vis = 5
+vis_every = 10000
+
+render_test = 1
+
+rank_mat = [0, 4]
+rank_vec = [96, 96]
+
+rank_density = [96, 0]
+degree = 4
+
+expname = ficus_retrain_2
+model_name = CCNeRF
+residual = 0
+
+fea2denseAct = softplus
+fea2rgbAct = sigmoid
+
+L1_weight_inital = 1e-5
+L1_weight_rest = 1e-5
+
+rm_weight_mask_thre = 1e-4
+

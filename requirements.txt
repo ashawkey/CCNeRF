@@ -1,0 +1,10 @@
+opencv-python
+torch
+ninja
+numpy 
+pandas
+tqdm
+matplotlib
+scipy
+scikit-image
+plyfile
